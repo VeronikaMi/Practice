@@ -1,0 +1,61 @@
+$underline : #FCF8ED;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row{
+  margin-top: 40px;
+}
+
+.card{
+  border: none;
+  border-radius: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #3D351A;
+}
+
+a:hover{
+  color: #3D351A;
+}
+
+h2{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 26px;
+  border-bottom: 3px solid $underline;
+}
+
+h5{
+  font-weight: 900;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  text-transform: capitalize;
+  li a{
+    list-style: none;
+  }
+}
+
+.active{
+  font-weight: 700;
+}
+
+.btn-see-more{
+  font-weight: normal;
+  font-size: 12px;
+  padding: 7px 23px;
+  border: 1px solid #3D351A;
+  text-transform: capitalize;
+}
+
+section{
+  margin-bottom: 110px;
+}
