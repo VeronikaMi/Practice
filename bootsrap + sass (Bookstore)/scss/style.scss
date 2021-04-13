@@ -42,8 +42,14 @@ header{
     margin:auto 0;
     font-size: 12px;
 
-    li:not(:first-child){
+    li{
+      &:hover{
+        text-decoration: underline;
+      }
+
+      &:not(:first-child){
         margin-left: 30px;
+    }
     }
   }
 }
@@ -60,6 +66,12 @@ header{
     color: $cta;
     border:1px solid $cta;
     padding: 8px 28px;
+
+    &:hover{
+      color: $primary-color;
+      border:1px solid $primary-color;
+      transition: linear .5s;
+    }
   }
 }
 
@@ -106,6 +118,12 @@ header{
     background: $cta;
     padding:12px 63px;
     filter: drop-shadow(4px 8px 14px rgba(0, 0, 0, 0.1));
+
+    &:hover{
+      color: #fff;
+      background:$primary-color;
+      transition: linear .3s;
+    }
   }
 
  
@@ -119,35 +137,38 @@ header{
   height: 573px;
   padding:26px 33px;
 
-.about-book{
-  margin-top: 371px;
-  height: 80px;
-  line-height: 70%;
-  margin-left: 38px;
-  padding-left: 8px;
-  border-left: 2px solid #FFFFFF;;
-
-  font-size: 17px;
-
-  h3{
-    font-size: 20px;
-    font-weight: 900;
+  .owl-carousel{
+    .book > img{
+      width: 340px;
+      height: 522px;
     }
 
-  .author{
-    font-weight: 400;
+    .about-book{
+      margin-top: 371px;
+      height: 80px;
+      line-height: 70%;
+      margin-left: 38px;
+      padding-left: 8px;
+      border-left: 2px solid #FFFFFF;;
+    
+      font-size: 17px;
+    
+      .author{
+        font-weight: 400;
+      }
+    
+      .price{
+        font-weight: 700;
+      }
+      
+    }
+    
+    a{
+      bottom: 0;
+      right: 0;
+    }
   }
 
-  .price{
-    font-weight: 700;
-  }
-  
-}
-
-a{
-  bottom: 0;
-  right: 0;
-}
 }
 
 //showcase end
@@ -157,71 +178,82 @@ a{
   margin-bottom: 110px;
 }
 
-.rec{
-  background: red;
-  height: 90px;
-  width: 90px;
-}
-
 button[type="button"]{
   color: #000;
 }
 
-.carousel-item {
-  .row{
-    padding-bottom: 40px;
-  }
-}
-
-
-
-.card{
-  &:not(:last-child){
-    margin-right: 30px;
-
-  }
+.my-owl-2{
   position: relative;
-  width: 307px;
-  height: 378px;
-  padding: 18px 44px;
-  box-shadow: 8px 13px 22px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  height: 100%;
 
-  img{
-    width: 156px;
-    height: 231px;  
-    display: inline-block;
-    margin: 0 auto;
-
+  .owl-stage-outer{
+    height: 400px;
   }
 
-  &-text{
-    font-weight: 300;
-    font-size: 15px;
-    text-transform: capitalize;
-  }
+  .owl-nav{ //interesting
+    .owl-prev, .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
-  &-body{
-    .arrow{
-     background: url('../images/Arrow\ 2.svg') center center no-repeat;
-     bottom: 40px;
-     right: 0px;
-    width: 19.08px;
-    height: 0px;
+    .owl-prev {
+      left: -2rem;
+    }
 
+    .owl-next {
+      right: -2rem;
+    }
+
+    button:hover{
+      background: none !important; //overwrites it without important
     }
   }
+
+
+  .owl-item{
+  &:first-child{
+    margin-left: 30px;
+  }
+}
+}
+
+.owl-item{
+  padding-bottom: 40px;
+  width: 307px;
+
+  .card{
+    position: relative;
+    width: 270px;
+    height: 378px;
+    padding: 18px 34px;
+    box-shadow: 8px 13px 22px rgba(0, 0, 0, 0.1);
   
+    img{
+      width: 156px;
+      height: 231px;  
+      display: inline-block;
+      margin: 0 auto;
+  
+    }
+  
+    &-text{
+      font-weight: 300;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+  
+    &-body{
+      .arrow{
+       background: url('../images/Arrow\ 2.svg') center center no-repeat;
+       bottom: 40px;
+       right: 0px;
+      }
+    }
+  }
 }
 
-.carousel-control-prev{
-  left: -48px;
-  width: 20px;
-}
-
-.carousel-control-next{
-  width: 20px;
-  right: -48px;
-}
 
 //new end
 
@@ -231,6 +263,7 @@ button[type="button"]{
     font-size: 14px;
     width: 420px;
     height: 388px;
+    margin-left: 20px;
     background: url('../images/Bookmark.png') right top no-repeat;
     box-shadow: 7px 12px 18px rgba(0, 0, 0, 0.15);
     img{
@@ -253,3 +286,88 @@ button[type="button"]{
     }
   }
 }
+
+//editor end
+
+//trigger start
+.trigger{
+  width:297px;
+
+  p{
+    font-size: 15px;
+  }
+
+  h4{
+    font-size: 18px;
+  }
+
+  img{
+    margin-bottom: 10px;
+  }
+
+  &:not(:last-child){
+    margin-right: 100px;
+  }
+}
+
+//trigger end
+
+//events start
+
+.events{
+  .row{
+    padding-bottom: 0px;
+  }
+  .event{
+    width: 48%;
+    background: linear-gradient(0deg, rgba(44, 39, 22, 0.7), rgba(44, 39, 22, 0.7)),url('../images/011618_1024x1024.jpg')center no-repeat;
+    background-size: 100% 100%;
+    height: 534px;
+    box-shadow: 12px 13px 30px rgba(0, 0, 0, 0.15);
+
+    .text-wrap{
+      color: #fff;
+      padding-left: 15px;
+      width: 80%;
+      border-left: 2px solid #FFFFFF;
+      bottom: 93px;
+      p{
+        font-size: 13px;
+      }
+    }
+
+    &:last-child{
+      background: linear-gradient(0deg, rgba(44, 39, 22, 0.7), rgba(44, 39, 22, 0.7)),url('../images/ellicia-tD_e5Q8RimM-unsplash.jpg')center center no-repeat/cover;
+    }
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+    a{
+      bottom: 80px;
+      right: 56px;
+    }
+  }
+}
+
+//events end
+
+//footer start
+.footer{
+  height: 310px;
+  background:#4E3C00;
+
+
+ a{
+    color: #fff;
+  }
+}
+
+ol li {
+  color: #000;
+}
+
+
+
+

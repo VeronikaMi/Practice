@@ -31,6 +31,11 @@ h2{
   border-bottom: 3px solid $underline;
 }
 
+h3{
+  font-size: 20px;
+  font-weight: 900;
+  }
+
 h5{
   font-weight: 900;
   font-size: 16px;
@@ -54,8 +59,36 @@ ul {
   padding: 7px 23px;
   border: 1px solid #3D351A;
   text-transform: capitalize;
+
+  &:hover{
+    color:  #DEB837;
+    border: 1px solid #DEB837;
+    transition: linear .3s;
+  }
 }
 
 section{
   margin-bottom: 110px;
+}
+
+// owl
+.owl-dots{
+  position: absolute;
+  bottom: 23px;
+  right: 97px;
+  display: flex;
+}
+
+.owl-dots button span{
+  color: #fff;
+  width: 10px;
+  height: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+  background: rgba(255, 255, 255, 0.43);
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+  background: #fff;
 }

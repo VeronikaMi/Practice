@@ -7,11 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="css/style.min.css">
 
@@ -56,143 +62,163 @@
 
 
   <div class="container">
-  <!-- Showcase start -->
+    <!-- Showcase start -->
 
     <section class="showcase d-flex align-items-center justify-content-between">
       <div class="offer col-lg-4">
         <div class="circle"></div>
         <p class="offer-sentence">Get your new book with the best price </p>
-        <p class="offer-par">You can find any kind of books with the best price. Join us with the special offer - buy one book and get a bookmark as a present.</p>
+        <p class="offer-par">You can find any kind of books with the best price. Join us with the special offer - buy
+          one book and get a bookmark as a present.</p>
         <a href="#">Join Us</a>
       </div>
-      <div class="offer-book col-lg-6">
-        <div class="book d-flex">
-          <img src="images/book (murakami).png" alt="book">
-          <div class="about-book position-relative">
-            <h3>After the quake </h3>
-            <p class="author">Haruki murakami</p>
-            <p class="price">15$</p>
-            <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+      <div class="offer-book col-lg-6 position-relative">
+        <div class="owl-carousel my-owl-1 owl-theme">
+          <div class="book d-flex">
+            <img src="images/book (murakami).png" alt="book">
+            <div class="about-book position-relative">
+              <h3>After the quake </h3>
+              <p class="author">Haruki murakami</p>
+              <p class="price">15$</p>
+              <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+            </div>
+          </div>
+          <div class="book d-flex">
+            <img src="images/Blue train.png" alt="book">
+            <div class="about-book position-relative">
+              <h3>The mistery of the bl... </h3>
+              <p class="author">Agatha christie</p>
+              <p class="price">34$</p>
+              <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+            </div>
+          </div>
+          <div class="book d-flex">
+            <img src="images/Good People.png" alt="book">
+            <div class="about-book position-relative">
+              <h3>The good people </h3>
+              <p class="author">Hannah kent</p>
+              <p class="price">35$</p>
+              <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+            </div>
+          </div>
+          <div class="book d-flex">
+            <img src="images/Mountain.png" alt="book">
+            <div class="about-book position-relative">
+              <h3>No friend but the mo... </h3>
+              <p class="author">behrouz boochani</p>
+              <p class="price">30$</p>
+              <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+            </div>
           </div>
         </div>
 
       </div>
+
+
     </section>
 
-  <!-- Showcase end -->
+    <!-- Showcase end -->
 
-  <!-- New start -->
+    <!-- New start -->
 
     <section class="new">
       <div class="head-btn d-flex justify-content-between align-items-center">
         <h2>New</h2>
         <a class="btn-see-more" href="#">See more</a>
       </div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <!-- Morning flower -->
-            <div class="card col-lg-3" >
-              <img src="images/Rectangle 20.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">The morning flower </h5>
-                <p class="card-text">Amanda Hocking</p>
-                <p class="price">18$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- Mocking bird -->
-            <div class="card col-lg-3" >
-              <img src="images/Lee.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">To kill a mockingbird </h5>
-                <p class="card-text">Harper Lee</p>
-                <p class="price">20$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- Harry Potter -->
-            <div class="card col-lg-3" >
-              <img src="images/Harry.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">Harry Potter and the ... </h5>
-                <p class="card-text">J.K. rowling</p>
-                <p class="price">25$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- American gods -->
-            <div class="card col-lg-3" >
-              <img src="images/Gods.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">American gods </h5>
-                <p class="card-text">Neil gaiman</p>
-                <p class="price">19$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-           </div>
-          </div>
 
-          <!-- Second slide -->
-          <div class="carousel-item">
-            <div class="row">
-              <!-- Morning flower -->
-            <div class="card col-lg-3" >
-              <img src="images/Rectangle 20.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">The morning flower </h5>
-                <p class="card-text">Amanda Hocking</p>
-                <p class="price">18$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
+      <div class="owl-carousel my-owl-2 owl-theme">
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Rectangle 20.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">The morning flower </h5>
+              <p class="card-text">Amanda Hocking</p>
+              <p class="price">18$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
             </div>
-            <!-- Mocking bird -->
-            <div class="card col-lg-3" >
-              <img src="images/Lee.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">To kill a mockingbird </h5>
-                <p class="card-text">Harper Lee</p>
-                <p class="price">20$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- Harry Potter -->
-            <div class="card col-lg-3" >
-              <img src="images/Harry.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">Harry Potter and the ... </h5>
-                <p class="card-text">J.K. rowling</p>
-                <p class="price">25$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- American gods -->
-            <div class="card col-lg-3" >
-              <img src="images/Gods.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">American gods </h5>
-                <p class="card-text">Neil gaiman</p>
-                <p class="price">19$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-           </div>
           </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-          <!-- <span class="visually-hidden">Previous</span> -->
-          <img src="images/Prev.svg" alt="left arrow">
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-          <!-- <span class="visually-hidden">Next</span> -->
-          <img src="images/Next.svg" alt="right arrow">
-        </button>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Lee.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">To kill a mockingbird </h5>
+              <p class="card-text">Harper Lee</p>
+              <p class="price">20$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Harry.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">Harry Potter and the ... </h5>
+              <p class="card-text">J.K. rowling</p>
+              <p class="price">25$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Gods.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">American gods </h5>
+              <p class="card-text">Neil gaiman</p>
+              <p class="price">19$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Rectangle 20.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">The morning flower </h5>
+              <p class="card-text">Amanda Hocking</p>
+              <p class="price">18$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Lee.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">To kill a mockingbird </h5>
+              <p class="card-text">Harper Lee</p>
+              <p class="price">20$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Harry.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">Harry Potter and the ... </h5>
+              <p class="card-text">J.K. rowling</p>
+              <p class="price">25$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Gods.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">American gods </h5>
+              <p class="card-text">Neil gaiman</p>
+              <p class="price">19$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
       </div>
+
+
     </section>
     <!-- New section end -->
 
@@ -203,183 +229,240 @@
         <h2>Bestsellers</h2>
         <a class="btn-see-more" href="#">See more</a>
       </div>
-      <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <!-- No friend -->
-            <div class="card col-lg-3" >
-              <img src="images/Mountain.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">No friend but the mo... </h5>
-                <p class="card-text">behrouz boochani</p>
-                <p class="price">30$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- The skripal files -->
-            <div class="card col-lg-3" >
-              <img src="images/Files.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">The skripal files: puti... </h5>
-                <p class="card-text">makr urban</p>
-                <p class="price">28$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- Murder in the mews -->
-            <div class="card col-lg-3" >
-              <img src="images/Murder.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">Murder in the mews </h5>
-                <p class="card-text">Agatha christie</p>
-                <p class="price">32$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- The mistery -->
-            <div class="card col-lg-3" >
-              <img src="images/Blue train.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">The mistery of the bl... </h5>
-                <p class="card-text">Agatha christie</p>
-                <p class="price">34$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-           </div>
-          </div>
 
-          <!-- Second slide -->
-          <div class="carousel-item">
-            <div class="row">
-              <!-- Morning flower -->
-            <div class="card col-lg-3" >
-              <img src="images/Rectangle 20.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">The morning flower </h5>
-                <p class="card-text">Amanda Hocking</p>
-                <p class="price">18$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
+      <div class="owl-carousel my-owl-2 owl-theme">
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Mountain.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">No friend but the mo... </h5>
+              <p class="card-text">behrouz boochani</p>
+              <p class="price">30$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
             </div>
-            <!-- Mocking bird -->
-            <div class="card col-lg-3" >
-              <img src="images/Lee.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">To kill a mockingbird </h5>
-                <p class="card-text">Harper Lee</p>
-                <p class="price">20$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- Harry Potter -->
-            <div class="card col-lg-3" >
-              <img src="images/Harry.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">Harry Potter and the ... </h5>
-                <p class="card-text">J.K. rowling</p>
-                <p class="price">25$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-            <!-- American gods -->
-            <div class="card col-lg-3" >
-              <img src="images/Gods.png" class="card-img-top" alt="...">
-              <div class="card-body position-relative">
-                <h5 class="card-title">American gods </h5>
-                <p class="card-text">Neil gaiman</p>
-                <p class="price">19$</p>
-                <a class="btn arrow position-absolute" href="#"></a>
-              </div>
-            </div>
-           </div>
           </div>
         </div>
-       
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-          <!-- <span class="visually-hidden">Previous</span> -->
-          <img src="images/Prev.svg" alt="left arrow">
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-          <!-- <span class="visually-hidden">Next</span> -->
-          <img src="images/Next.svg" alt="right arrow">
-        </button>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Files.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">The skripal files: puti... </h5>
+              <p class="card-text">makr urban</p>
+              <p class="price">28$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Murder.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">Murder in the mews </h5>
+              <p class="card-text">Agatha christie</p>
+              <p class="price">32$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Blue train.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">The mistery of the bl... </h5>
+              <p class="card-text">Agatha christie</p>
+              <p class="price">34$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Rectangle 20.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">The morning flower </h5>
+              <p class="card-text">Amanda Hocking</p>
+              <p class="price">18$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Lee.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">To kill a mockingbird </h5>
+              <p class="card-text">Harper Lee</p>
+              <p class="price">20$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Harry.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">Harry Potter and the ... </h5>
+              <p class="card-text">J.K. rowling</p>
+              <p class="price">25$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card col-lg-3">
+            <img src="images/Gods.png" class="card-img-top" alt="...">
+            <div class="card-body position-relative">
+              <h5 class="card-title">American gods </h5>
+              <p class="card-text">Neil gaiman</p>
+              <p class="price">19$</p>
+              <a class="btn arrow position-absolute" href="#"></a>
+            </div>
+          </div>
+        </div>
       </div>
+
     </section>
 
     <section class="editor">
       <h2>Editor’s choice</h2>
       <div class="row">
         <!-- Howking card -->
-        <div class="card col-lg-4" >
+        <div class="card col-lg-4">
           <div class="top-part d-flex">
             <img src="images/Howking.png" class="card-img-top" alt="...">
             <ul>
               <li> <span class="fw-bold">Publisher:</span> Welbeck Publishing Group</li>
               <li>
-              <span class="fw-bold">Category:</span> Non-Fiction 
+                <span class="fw-bold">Category:</span> Non-Fiction
               </li>
               <li>
-              <span class="fw-bold">Language:</span> English
+                <span class="fw-bold">Language:</span> English
               </li>
             </ul>
           </div>
           <div class="card-body position-relative">
-            <p class="card-text">Hawking explores the life and work, explaining the breakthroughs at the cutting edge of cosmology, from the Big Bang to black holes, and the  ... </p>
+            <p class="card-text">Hawking explores the life and work, explaining the breakthroughs at the cutting edge of
+              cosmology, from the Big Bang to black holes, and the ... </p>
             <a class="btn arrow position-absolute" href="#"></a>
           </div>
         </div>
 
         <!-- Bardugo -->
-        <div class="card col-lg-4" >
+        <div class="card col-lg-4">
           <div class="top-part d-flex">
             <img src="images/Bardugo.png" class="card-img-top" alt="...">
             <ul>
               <li> <span class="fw-bold">Publisher:</span> Hachette Children's Group</li>
               <li>
-              <span class="fw-bold">Category:</span>Fiction 
+                <span class="fw-bold">Category:</span>Fiction
               </li>
               <li>
-              <span class="fw-bold">Language:</span> English
+                <span class="fw-bold">Language:</span> English
               </li>
             </ul>
           </div>
           <div class="card-body position-relative">
-            <p class="card-text">Shortlisted for the Walter Scott Prize. Based on true events and set in a lost world bound by its own laws, The Good People is Hannah Kent's startling novel about absolute ...</p>
+            <p class="card-text">Shortlisted for the Walter Scott Prize. Based on true events and set in a lost world
+              bound by its own laws, The Good People is Hannah Kent's startling novel about absolute ...</p>
             <a class="btn arrow position-absolute" href="#"></a>
           </div>
         </div>
         <!-- Good People -->
-        <div class="card col-lg-4" >
+        <div class="card col-lg-4">
           <div class="top-part d-flex">
             <img src="images/Good People.png" class="card-img-top" alt="...">
             <ul>
               <li> <span class="fw-bold">Publisher:</span> Pan MacMillan</li>
               <li>
-              <span class="fw-bold">Category:</span> Non-Fiction 
+                <span class="fw-bold">Category:</span> Non-Fiction
               </li>
               <li>
-              <span class="fw-bold">Language:</span> English
+                <span class="fw-bold">Language:</span> English
               </li>
             </ul>
           </div>
           <div class="card-body position-relative">
-            <p class="card-text">Hawking explores the life and work, explaining the breakthroughs at the cutting edge of cosmology, from the Big Bang to black holes, and the  ...  </p>
+            <p class="card-text">Hawking explores the life and work, explaining the breakthroughs at the cutting edge of
+              cosmology, from the Big Bang to black holes, and the ... </p>
             <a class="btn arrow position-absolute" href="#"></a>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="triggers d-flex justify-content-center align-items-center">
+      <div class="trigger col-lg-4 text-center">
+        <img src="images/safe trig.png" alt="hand">
+        <h4 class="fw-bold">Safe payment</h4>
+        <p>You do not have to worry about your safety every opertion is done with high level of security</p>
+      </div>
 
+      <div class="trigger col-lg-4 text-center">
+        <img src="images/delivery trig.png" alt="hand">
+        <h4 class="fw-bold">Fast Delivery</h4>
+        <p>We provide delivery service that will send your books to you in a day for just 2$</p>
+      </div>
+
+      <div class="trigger col-lg-4 text-center">
+        <img src="images/recycle trig.png" alt="hand">
+        <h4 class="fw-bold">Recycle</h4>
+        <p>Our shop is a friend of the Earth, we recycle books that can not be used again</p>
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Bookshop Events</h2>
+      <div class="row d-flex justify-content-between">
+        <div class="event position-relative d-flex justify-content-center">
+          <div class="text-wrap position-absolute position-relative">
+            <h3>Book signing event</h3>
+            <p>This week our book shop will hold a book signing event where you can get your favourite Murakami’s book
+              signed by its author.</p>
+          </div>
+          <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+        </div>
+
+        <div class="event position-relative d-flex justify-content-center">
+          <div class="text-wrap position-absolute position-relative">
+            <h3>Annual books sale </h3>
+            <p>As usual once a year our shop offers our dear custumers 20% sale on any book of any genre. The sale ends
+              in 3 days.</p>
+          </div>
+          <a class="position-absolute" href="#"><img src="images/Arrow 1.svg" alt="arrow"></a>
+        </div>
+      </div>
+
+    </section>
 
   </div>
-  
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <footer class="footer d-flex  align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <a href="#">
+        <img src="images/Logo-footer.png" alt="opened book">
+      </a>
+
+      <div class="nav col-lg-5 d-flex">
+        <ul class="d-flex">
+          <li class="active"><a href="#">Categories</a></li>
+          <li><a href="#">New releases</a></li>
+          <li><a href="#">News feed</a></li>
+          <li><a href="#">Promotions</a></li>
+        </ul>
+      </div>
+
+      <a href="#"><img src="images/Up btn.png" alt="arrow up"></a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <script src="jquery.min.js"></script>
+  <script src="owl.carousel.min.js"></script>
 
   <script src="main.js"></script>
 </body>
