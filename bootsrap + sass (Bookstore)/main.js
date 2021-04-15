@@ -30,10 +30,37 @@ $('.my-owl-2').owlCarousel({
   loop:true,
   dots:false,
   nav:true,
-  navText:["<img src='images/Prev.svg' alt='left arrow'>"," <img src='images/Next.svg' alt='right arrow'>"]
+  navText:["<img src='images/Prev.svg' alt='left arrow'>"," <img src='images/Next.svg' alt='right arrow'>"],
+  responsive:{
+          0:{
+              items:1
+          },
+          414:{
+              items:2
+          },
+          960:{
+              items:3
+          },
+          1200:{
+              items:4
+          }
+      }
 });
 
 
+//smooth scrolling to the top
+$('#btn-up').click(function(e){
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, 1000);
+})
+
+$('#hamburger').click(function(){
+  $('.hamburger-menu').css({'display':'block'});
+})
+
+$('#close-btn').click(function(){
+  $('.hamburger-menu').css({'display':'none'});
+})
 
 // $('.owl-carousel').owlCarousel({
 //   loop:true,

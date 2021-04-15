@@ -7,6 +7,7 @@ $cta:#FFD549;
 body{
   color: $primary-color;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 // header start 
@@ -15,7 +16,7 @@ header{
   border-bottom: 2px solid rgba(222, 184, 55, 0.12);
 }
 
-.logo{
+.logo {
   &-text{
       margin-top: 19px; //think about it!
       font-size: 12px;
@@ -25,6 +26,7 @@ header{
 
       .store{
         font-size: 10px;
+        width: 200px;
       }
 
     .name{
@@ -38,11 +40,13 @@ header{
 }
 
 .nav{
+
   ul{
     margin:auto 0;
-    font-size: 12px;
+    font-size: 13px;
 
     li{
+      width: 90px;
       &:hover{
         text-decoration: underline;
       }
@@ -55,6 +59,7 @@ header{
 }
 
 .phone{
+  width: 240px;
   span{
     font-weight: 700;
     font-size: 15px;
@@ -62,6 +67,7 @@ header{
 
   a{
     margin-left: 25px;
+    margin-right: 5px;
     font-size: 12px;
     color: $cta;
     border:1px solid $cta;
@@ -73,6 +79,46 @@ header{
       transition: linear .5s;
     }
   }
+}
+
+#hamburger{
+  margin-left: 20px;
+  display: none;
+}
+
+.hamburger-menu{
+  display: none;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 25, 3, 0.94);
+  a{
+    color: #fff;
+  }
+
+  #close-btn{
+    float: right;
+    margin-top: 22px;
+    margin-right: 15px;
+    font-size: 26px;
+  }
+
+  ul{
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    text-align: center;
+    font-weight: 100;
+
+    li{
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+  }
+
 }
 
 // header end
@@ -118,7 +164,7 @@ header{
     background: $cta;
     padding:12px 63px;
     filter: drop-shadow(4px 8px 14px rgba(0, 0, 0, 0.1));
-
+    z-index: 10;
     &:hover{
       color: #fff;
       background:$primary-color;
@@ -133,10 +179,10 @@ header{
   background: linear-gradient(0deg, rgba(61, 53, 26, 0.69), rgba(61, 53, 26, 0.69)), url('../images/bg.jpg') no-repeat center center;
   box-shadow: 13px 9px 23px rgba(0, 0, 0, 0.25);
   color: #fff;
-  width: 670px;
+  width: 53%;
   height: 573px;
   padding:26px 33px;
-
+  z-index: 10;
   .owl-carousel{
     .book > img{
       width: 340px;
@@ -261,7 +307,8 @@ button[type="button"]{
 .editor{
   .card{
     font-size: 14px;
-    width: 420px;
+    // width: 420px;
+    width: 31%;
     height: 388px;
     margin-left: 20px;
     background: url('../images/Bookmark.png') right top no-repeat;
@@ -303,10 +350,6 @@ button[type="button"]{
 
   img{
     margin-bottom: 10px;
-  }
-
-  &:not(:last-child){
-    margin-right: 100px;
   }
 }
 
@@ -370,4 +413,168 @@ ol li {
 
 
 
+// responsiveness
 
+@media (max-width:1400px) {
+  .editor{
+    .row{
+      .card{
+        width: 45%;
+      }
+      justify-content: space-around;
+      .card:last-child{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width : 1200px){
+  #hamburger{
+    display: block;
+  }
+  header{
+    .nav{
+      li{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width : 1000px){
+  .footer{
+    position: relative;
+    #btn-up{
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  } 
+}
+
+@media (max-width : 1000px){
+  .circle{
+    display: none;
+  }
+
+  .showcase{
+    flex-direction: column;
+    
+    .offer{
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      &-book{
+        width: 100%;
+      }
+    }
+  }
+  .new{
+    margin-top: 320px;
+  }
+
+  .editor{
+    justify-content: space-between;
+  }
+
+  .events{
+    .row{
+      flex-direction: column;
+      align-content: center;
+      .event{
+        width: 90%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+@media (max-width : 768px){
+
+  .my-owl-2{
+    .owl-nav{ 
+      .owl-prev, .owl-next {
+        position: static;
+        margin: 20px 30px;
+      }
+    }
+  }
+
+  .phone{
+    display: none;
+  }
+
+  img[alt="user"]{
+    display: none;
+  }
+
+  .event{
+    width: 100%;
+  }
+
+  .editor{
+    .row{
+      .card{
+        width: 80%;
+      }
+      justify-content: space-around;
+      .card:nth-child(2){
+        display: none;
+      }
+    }
+  }
+
+  .footer{ 
+    .container{
+      align-items: flex-start !important;
+      flex-direction: column;
+      .nav ul{
+        margin-top: 30px;
+        flex-direction: column;
+        li{
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  
+}
+
+@media (max-width : 568px){
+ 
+
+  .editor{
+    .row{
+      .card{
+        width: 100%;
+      }
+    }
+  }
+
+ .triggers{
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .offer-book{
+   .owl-carousel{
+     padding: 0;
+     .book{
+       align-items: center;
+       &>img{
+         height: 90%;
+          width: 60%;
+       }
+
+       .about-book{
+        margin-top: 30px;
+        margin-left: 5px;
+       }
+     }
+
+
+   }
+ }
+}
