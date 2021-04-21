@@ -1,8 +1,10 @@
+// getting all the variables that ill work with
 const option1 = document.querySelector('.option1'),
       option2 = document.querySelector('.option2'),
       option3 = document.querySelector('.option3'),
       option4 = document.querySelector('.option4');
 
+// array of options 
 const optionElements = document.querySelectorAll('.option');
 
 const question = document.getElementById('question');
@@ -18,6 +20,7 @@ const btnNext = document.getElementById('btn-next');
 
 let score =0;
 
+// modal
 const correctAnswer = document.getElementById('correct-answer'),
       numberOfAllQuestions2 = document.getElementById('number-of-all-questions-2'),
       btnTryAgain = document.getElementById('btn-try-again');

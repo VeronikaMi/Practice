@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+/* question container */
 .quiz-container {
     max-width: 700px;
     min-height: 497px;
@@ -80,6 +81,7 @@ body {
     background-color: #009687b6;
 }
 
+/* trackers */
 #answers-tracker {
     border-top: 1px solid #cccccc;
     padding-top: 15px;
@@ -102,6 +104,7 @@ body {
     background-color: red;
 }
 
+/* modal window */
 .quiz-over-modal {
     position: fixed;
     left: 0;
