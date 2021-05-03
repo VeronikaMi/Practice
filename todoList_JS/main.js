@@ -56,10 +56,11 @@ addBtn.addEventListener('click',()=>{
       completed:false
     };
 
-    fillTodoWrapper(taskObj);
-  
     tasks.push(taskObj);
+    filterTodos();
     updateToLocalStorage(tasks);
+    fillFromStorage();
+
   }
 })
 
