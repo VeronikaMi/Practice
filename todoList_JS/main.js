@@ -20,14 +20,11 @@ const fillTodoWrapper = (task)=>{
 
 // getting todos from local storage
 const fillFromStorage = ()=>{
+  todoWrapper.innerHTML = "";
   if(tasks.length != 0){
-    todoWrapper.innerHTML = "";
     tasks.forEach(task => {
       fillTodoWrapper(task);
     });
-  }
-  else {
-    todoWrapper.innerHTML = "";
   }
 } 
 
