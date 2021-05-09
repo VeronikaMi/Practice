@@ -1,0 +1,169 @@
+@font-face {
+  font-family: futura-pt;
+  src: url("fonts/futura-pt-book.2dadbb3c03c1.woff2"),
+       url("fonts/futura-pt-book-oblique.f859db99cda9.woff2"),
+       url("fonts/futura-pt-medium.b650e9c2aaf6.woff2");
+}
+
+:root{
+  --bluehHighlights : #0000ff;
+  --plusOrMinus :"+";
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+
+/* end of general */
+
+/* header start */
+#menu-section{
+  border-bottom:2px solid #eee;
+  padding: 0 40px;
+}
+
+#header{
+  height:70px;
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo start */
+
+.logo a{
+  display: flex;
+}
+
+.left{
+  display: flex;
+}
+
+.left .bar{
+  width:4px;
+  height: 29px;
+  background: #000;
+  margin-right: 4px;
+}
+
+.right .bar{
+  width:29px;
+  height: 4px;
+  background: #000;
+  margin-bottom: 4px;
+} 
+
+/* logo end */
+
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+.spec{
+  position: relative;
+  display: flex;
+}
+
+.spec::after{
+  content: var(--plusOrMinus);
+  font-size: 1.7rem;
+  position: absolute;
+  top: -7px;
+  right:-23px;
+
+} 
+
+nav ul{
+  display: flex;
+  align-items: center;
+
+}
+
+.additional ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul li{
+  margin-left: 40px;
+}
+
+.additional ul li{
+  margin-left: 30px;
+  text-transform: none;
+}
+
+
+.log_in{
+  font-size: 1rem;
+}
+
+.try{
+  color: var(--bluehHighlights);
+}
+
+.menu{
+  font-size: 1.25rem;
+  padding-bottom: 50px;
+  display: none;
+}
+
+.menu-heading{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.menu-heading.more{
+  margin-top: 40px;
+}
+.inline-ul{
+  display: flex;
+}
+
+.inline-ul li{
+  margin-right: 30px;
+}
+
+.first-li{
+  font-weight: bold;
+}
+
+.second-menu{
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.second-menu ul{
+  width: 310px;
+}
+
+/* header end */
+
+
+/* additional classes */
+
+.show{
+  display: block;
+}
