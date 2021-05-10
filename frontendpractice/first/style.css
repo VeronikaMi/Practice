@@ -18,6 +18,7 @@
 
 body{
   font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 0.5;
 }
 
 a{
@@ -27,6 +28,11 @@ a{
 
 ul{
   list-style: none;
+}
+
+p{
+  width:50%;
+  margin: 0 auto;
 }
 
 /* end of general */
@@ -161,8 +167,288 @@ nav ul li{
 
 /* header end */
 
+.fixedMenu{
+  padding:20px 40px;
+}
+
+.fixedMenu ul{
+  display: flex;
+  font-size: 1.05rem;
+}
+
+.fixedMenu ul li{
+  margin-right: 40px;
+}
+
+.current a{
+  color: #FF764D;
+}
+
+
+/* showcase */
+.showcase{
+  height: 87vh;
+  width: 83vw;
+  margin: 0 auto;
+  background: url("imgs/header.jpg.webp") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase h1{
+  color: #EE5745;
+  font-size: 9rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* first section pics start */
+.pics{
+  height: 100vh;
+  position: relative;
+}
+
+.back{
+  display: flex;
+}
+
+.white{
+  background: #fff;
+  width:42vw;
+  height: 100vh;
+}
+
+.yellow{
+  height: 100vh;
+  width: 58vw;
+  background: #fbffa7;
+}
+
+.front{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* first section pics end */
+
+/* second section start */
+.img-video{
+  background: url("imgs/poster-juanpe.jpg.webp") no-repeat;
+  height:405px;
+  width:720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#Capa_1{
+  fill: #fff;
+}
+.blue{
+  width: 100px;
+  height: 100px;
+  background: var(--bluehHighlights);
+  border-radius: 50%;
+  padding-left:10px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe{
+  display: none; /* +block */
+  margin: 0 auto;
+}
+
+.under-video{
+  font-size: .875rem;
+  margin-top: 5px;
+}
+
+/* second section end */
+
+/* third section start */
+
+.pics2{
+  height: 130vh;
+  position: relative;
+}
+
+.green{
+  height: 130vh;
+  width: 58vw;
+  background: #b6ffc0;
+}
+
+.front2{
+  height: 130vh;
+}
+
+.left1{
+  display: grid;
+  gap:15vh;
+  align-content: space-evenly;
+}
+
+/* third section end */
+
+
+/* forth section start */
+.forth img{
+  display: block;
+  margin: 0 auto;
+}
+
+/* forth section end */
+
+/* fifth section start */
+
+.pics3{
+  height: 100vh;
+  position: relative;
+}
+
+.purple{
+  height:100vh;
+  width:67%;
+  background: #d5b3ff;
+  margin: 0 auto;
+}
+
+.front3{
+  justify-content: space-between;
+  width: 90%;
+  left:auto; /*to cancel the main left*/
+  right:0;
+}
+/* fifth section end */
+
+/* sixth section start */
+.last-color{
+  background: #b1c5ff;
+  width:83%;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.img-left{
+  background: url("imgs/photo-8.jpg") no-repeat right/cover ;
+  width: 50%;
+}
+
+.last-color .text{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blue-text{
+  width: 63%;
+}
+
+.blue-text p{
+  width: 100%;
+}
+
+.blue-text a{
+  font-size: 2rem;
+}
+
+/* .blue-text a::after{
+  content:">";
+  margin-left: 10px;
+} */
+/* sixth section start */
+
+/* footer start */
+
+#footer{
+  border-top: 2px solid #eee;
+  height: 95vh;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer h1{
+  margin-bottom: 70px;
+}
+
+#footer >div{
+  width: 85%;
+}
+
+#footer ul li{
+  margin-bottom: 7px;
+}
+
+#footer h1{
+  font-size: 4rem;
+}
+
+#footer .end-link{
+  font-size: .875rem;
+}
+
+#footer .title{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.social-icons ul{
+  display: flex;
+}
+
+.social-icons ul li{
+  margin-right: 10px;
+}
+
+.links{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 70px;
+}
+
+.newsletter p{
+  width: 100%;
+}
+/* footer end */
 
 /* additional classes */
+img{
+  max-width:100%;
+  height:auto;
+}
+
+.text p{
+  font-size: 1.25rem;
+  margin-bottom: 120px;
+}
+
+.text p.large{
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.text p.height{
+  line-height: 1.6;
+}
+
+.section{
+  margin-bottom: 120px;
+}
 
 .show{
   display: block;
