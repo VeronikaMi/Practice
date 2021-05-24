@@ -598,6 +598,14 @@ img{
   margin-right: 30px;
 }
 
+#footer .links .social> ul li a::after,
+#footer .links .education ul li a::after,
+#footer .links .community ul li a::after,
+#footer .links .distributors ul li a::after{
+  content: '\00a0›'; /* > */
+  font-size: 20px;
+}
+
 /* media */
 
 @media (min-width:1500px){
